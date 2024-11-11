@@ -26,3 +26,8 @@ jobs:
           pip install --upgrade build
           python -m build
           tree .
+      - name: Artifacts
+        run: |
+          rm dist/pack-0.0.0.tar.gz
+          mv script.py dist/script.py
+          tree .
