@@ -40,7 +40,7 @@ jobs:
   deploy:
     name: Deploy phase
     runs-on: "ubuntu-latest"
-    needs: dev
+    needs:  Build
     steps:
     - uses: actions/download-artifact@v4
       with:
