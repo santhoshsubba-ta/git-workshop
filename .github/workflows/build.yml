@@ -48,4 +48,6 @@ jobs:
     - name: Display structure of downloaded files
       run: ls -R
     - name: run
-      run: python script.py
+      run: |
+        pip install pack-0.0.0-py3-none-any.whl
+        python script.py
