@@ -31,3 +31,8 @@ jobs:
           rm dist/pack-0.0.0.tar.gz
           mv script.py dist/script.py
           tree .
+      - name: Artifacts upload
+        uses: actions/upload-artifact@v4
+        with:
+          name: my-artifact
+          path: dist/
